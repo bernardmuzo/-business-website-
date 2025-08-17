@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid Ink Printing & Computer Repairs</title>
+    <!-- Add to head section -->
+<meta name="description" content="Solid Ink Printing - Professional printing services and computer repairs in Zambia. Quality banners, chitenge prints, t-shirts, and 24/7 computer repair services.">
+<meta name="keywords" content="printing Zambia, computer repairs Lusaka, banner printing, chitenge designs, t-shirt printing, graphic design Zambia">
+<meta name="author" content="Solid Ink Printing Ltd">
+<link rel="canonical" href="https://www.solidinkprinting.com" />
+<!-- Preload critical resources -->
+<link rel="preload" href="hero-image.jpg" as="image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        /* CSS Styles */
+        :root {
+            --primary-color: #e91e63; /* Pink color */
+            --secondary-color: #000000; /* Black color */
+            --accent-color: #ffffff; /* White color */
+            --text-color: #333333;
+            --light-gray: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--accent-color);
+            margin-top: 60px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--accent-color);
+            padding: 0.8rem 1.8rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #c2185b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+            background-color: var(--light-gray);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--secondary-color);
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 2rem;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background-color: var(--accent-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--accent-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+        }
+
+        .service-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .emergency-badge {
+            display: inline-block;
+            background-color: #ff5722;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 5rem 0;
+            background-color: var(--light-gray);
+        }
+
+        .pricing-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .tab-btn {
+            padding: 0.8rem 1.5rem;
+            background-color: var(--accent-color);
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: 1px solid #ddd;
+        }
+
+        .tab-btn:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .tab-btn:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+
+        .tab-btn.active {
+            background-color: var(--primary-color);
+            color: var(--accent-color);
+            border-color: var(--primary-color);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .pricing-card {
+            background-color: var(--accent-color);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 5rem 0;
+            background-color: var(--accent-color);
+        }
+
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonial {
+            background-color: var(--accent-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 0 1rem;
+            border: 1px solid #eee;
+        }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid var(--primary-color);
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial h4 {
+            color: var(--primary-color);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background-color: var(--light-gray);
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 2rem;
+        }
+
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+
+        .contact-details p {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-details i {
+            margin-right: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        /* Blog Section */
+        .blog {
+            padding: 5rem 0;
+            background-color: var(--accent-color);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background-color: var(--accent-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .blog-date {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-content h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .blog-content p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #444;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 0 1rem;
+            }
+
+            nav {
+                position: fixed;
+                top: 60px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 60px);
+                background-color: var(--secondary-color);
+                transition: left 0.3s;
+                z-index: 999;
+            }
+
+            nav.active {
+                left: 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 2rem;
+            }
+
+            nav ul li {
+                margin: 1rem 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">SOLID<span>INK</span></div>
+            <button class="mobile-menu-btn">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Quality Printing & Computer Services</h1>
+            <p>24/7 professional printing solutions and computer repairs in Zambia. We deliver excellence with every project.</p>
+            <a href="#contact" class="btn">Get a Quote</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Solid Ink Printing</h2>
+                <p>Your trusted partner for all printing and computer service needs</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2010, Solid Ink Printing Ltd has grown to become one of Zambia's leading providers of printing and computer repair services. What started as a small printing shop has now expanded to offer a comprehensive range of services to both individual and corporate clients.</p>
+                    <p>Our mission is to deliver high-quality, affordable printing solutions and reliable computer services with exceptional customer service. We pride ourselves on our 24/7 availability for emergency computer repairs and our quick turnaround times for printing projects.</p>
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li>State-of-the-art printing equipment</li>
+                        <li>Experienced and skilled technicians</li>
+                        <li>24/7 emergency computer repair services</li>
+                        <li>Competitive pricing</li>
+                        <li>Quick turnaround times</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Solid Ink Printing Shop">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions for all your printing and computer needs</p>
+            </div>
+            <div class="services-grid">
+                <!-- Printing Services -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Large Format Printing">
+                    <div class="service-content">
+                        <h3>Large Format Printing</h3>
+                        <p>High-quality large format printing for banners, posters, and signage. Perfect for advertising and events.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Chitenge Printing">
+                    <div class="service-content">
+                        <h3>Chitenge Printing</h3>
+                        <p>Custom designs printed on traditional African fabric for clothing, decorations, and special occasions.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1559&q=80" alt="T-Shirt Printing">
+                    <div class="service-content">
+                        <h3>T-Shirt & Caps Printing</h3>
+                        <p>Custom apparel printing for businesses, events, and personal use with durable, vibrant prints.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1380&q=80" alt="Embroidery">
+                    <div class="service-content">
+                        <h3>Embroidery & 3D Signage</h3>
+                        <p>Professional embroidery services and eye-catching 3D signs for businesses and organizations.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1536&q=80" alt="Typing and Printing">
+                    <div class="service-content">
+                        <h3>Typing and Printing</h3>
+                        <p>Document preparation, typing services, and professional printing for all your paperwork needs.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Photocopying">
+                    <div class="service-content">
+                        <h3>Photocopying</h3>
+                        <p>High-quality photocopying services with options for color and black & white copies.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Graphic Design">
+                    <div class="service-content">
+                        <h3>Graphic Designing</h3>
+                        <p>Professional graphic design services for logos, brochures, business cards, and marketing materials.</p>
+                    </div>
+                </div>
+                <!-- Computer Services -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Computer Repairs">
+                    <div class="service-content">
+                        <div class="emergency-badge">24/7 Emergency Service</div>
+                        <h3>Computer Repairs</h3>
+                        <p>Comprehensive computer repair services including screen replacement, motherboard repairs, OS installation, and more.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Computer Sales">
+                    <div class="service-content">
+                        <h3>Computer Sales & Accessories</h3>
+                        <p>Quality computers, laptops, and accessories at competitive prices with warranty options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Pricing</h2>
+                <p>Transparent pricing for all our services</p>
+            </div>
+            <div class="pricing-tabs">
+                <button class="tab-btn active" onclick="showPricing('printing')">Printing Services</button>
+                <button class="tab-btn" onclick="showPricing('computer')">Computer Services</button>
+            </div>
+            <div id="printing-pricing" class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Large Format Printing</h3>
+                    <div class="price"><span>/sqm</span></div>
+                    <ul class="pricing-features">
+                        <li>Vinyl banners</li>
+                        <li>Posters</li>
+                        <li>Signage</li>
+                        <li>High-resolution printing</li>
+                        <li>Weather-resistant options</li>
+                    </ul>
+                    <a href="#contact" class="btn">Order Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Chitenge Printing</h3>
+                    <div class="price"><span>/piece</span></div>
+                    <ul class="pricing-features">
+                        <li>Custom designs</li>
+                        <li>Traditional fabric</li>
+                        <li>Vibrant colors</li>
+                        <li>Bulk discounts available</li>
+                        <li>Quick turnaround</li>
+                    </ul>
+                    <a href="#contact" class="btn">Order Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>T-Shirt Printing</h3>
+                    <div class="price"><span>/piece</span></div>
+                    <ul class="pricing-features">
+                        <li>Custom designs</li>
+                        <li>Various colors</li>
+                        <li>Different sizes</li>
+                        <li>Bulk discounts</li>
+                        <li>Durable prints</li>
+                    </ul>
+                    <a href="#contact" class="btn">Order Now</a>
+                </div>
+            </div>
+            <div id="computer-pricing" class="pricing-grid" style="display: none;">
+                <div class="pricing-card">
+                    <h3>Screen Replacement</h3>
+                    <div class="price">ZMW 1<span>+ parts</span></div>
+                    <ul class="pricing-features">
+                        <li>Laptop screens</li>
+                        <li>Smartphone screens</li>
+                        <li>Tablet screens</li>
+                        <li>Quality replacement parts</li>
+                        <li>1-month warranty</li>
+                    </ul>
+                    <a href="#contact" class="btn">Book Service</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Motherboard Repairs</h3>
+                    <div class="price">ZMW 1<span>+ parts</span></div>
+                    <ul class="pricing-features">
+                        <li>Diagnosis included</li>
+                        <li>Component-level repairs</li>
+                        <li>Data protection</li>
+                        <li>3-month warranty</li>
+                        <li>Emergency service</li>
+                    </ul>
+                    <a href="#contact" class="btn">Book Service</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>OS Installation</h3>
+                    <div class="price">ZMW 1</div>
+                    <ul class="pricing-features">
+                        <li>Windows 10/11</li>
+                        <li>Linux distributions</li>
+                        <li>Driver installation</li>
+                        <li>Basic software setup</li>
+                        <li>Data backup available</li>
+                    </ul>
+                    <a href="#contact" class="btn">Book Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from our satisfied customers</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                    <p>"Solid Ink Printing delivered our event banners with perfect quality and on time. Their attention to detail is impressive!"</p>
+                    <h4>John Mwansa</h4>
+                    <p>Event Planner, Lusaka</p>
+                </div>
+                <!-- More testimonials would be added here with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch for quotes or emergency services</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <p><i>📞</i> +260 770 290 484</p>
+                        <p><i>📞</i> +260 979 614 864</p>
+                        <p><i>✉️</i> info@solidinkprinting.com</p>
+                        <p><i>🏠</i> 123 Business Park, Lusaka, Zambia</p>
+                    </div>
+                    <h3>Business Hours</h3>
+                    <div class="contact-details">
+                        <p><i>🕒</i> Monday-Friday: 8:00 AM - 6:00 PM</p>
+                        <p><i>🕒</i> Saturday: 9:00 AM - 3:00 PM</p>
+                        <p><i>⚠️</i> Computer Repairs: 24/7 Emergency Service</p>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i>📱</i> Facebook</a>
+                        <a href="#"><i>📱</i> Instagram</a>
+                        <a href="#"><i>📱</i> Twitter</a>
+                        <a href="#"><i>📱</i> LinkedIn</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed*</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="Large Format Printing">Large Format Printing</option>
+                                <option value="Chitenge Printing">Chitenge Printing</option>
+                                <option value="T-Shirt Printing">T-Shirt Printing</option>
+                                <option value="Embroidery/3D Signage">Embroidery/3D Signage</option>
+                                <option value="Typing and Printing">Typing and Printing</option>
+                                <option value="Photocopying">Photocopying</option>
+                                <option value="Graphic Designing">Graphic Designing</option>
+                                <option value="Screen Replacement">Screen Replacement</option>
+                                <option value="Motherboard Repairs">Motherboard Repairs</option>
+                                <option value="OS Installation">OS Installation</option>
+                                <option value="Other Computer Service">Other Computer Service</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message*</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container" style="margin-top: 3rem;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.0000000000005!2d28.00000000000001!3d-15.000000000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDAwJzAwLjAiUyAyOMKwMDAnMDAuMCJF!5e0!3m2!1sen!2szm!4v1234567890123!5m2!1sen!2szm" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest News & Tips</h2>
+                <p>Stay updated with our blog</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Printing Tips">
+                    <div class="blog-content">
+                        <div class="blog-date">June 15, 2023</div>
+                        <h3>Choosing the Right Printing Material for Your Project</h3>
+                        <p>Learn about different printing materials and how to select the best one for your specific needs, whether it's banners, business cards, or promotional items.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Computer Maintenance">
+                    <div class="blog-content">
+                        <div class="blog-date">May 28, 2023</div>
+                        <h3>5 Essential Computer Maintenance Tips</h3>
+                        <p>Keep your computer running smoothly with these simple maintenance practices that can extend your device's lifespan and improve performance.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Graphic Design">
+                    <div class="blog-content">
+                        <div class="blog-date">April 10, 2023</div>
+                        <h3>Design Principles for Effective Marketing Materials</h3>
+                        <p>Discover the key design principles that make marketing materials more effective and how to apply them to your business's printed collateral.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>Solid Ink Printing</h3>
+                <p>Your one-stop shop for quality printing services and computer repairs in Zambia. We're committed to excellence in every project.</p>
+                <div class="social-links">
+                    <a href="#"><i>📱</i> Facebook</a>
+                    <a href="#"><i>📱</i> Instagram</a>
+                    <a href="#"><i>📱</i> Twitter</a>
+                    <a href="#"><i>📱</i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#services">Large Format Printing</a></li>
+                    <li><a href="#services">Chitenge Printing</a></li>
+                    <li><a href="#services">T-Shirt Printing</a></li>
+                    <li><a href="#services">Embroidery/3D Signage</a></li>
+                    <li><a href="#services">Computer Repairs</a></li>
+                    <li><a href="#services">Graphic Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i>📞</i> +260 770 290 484</li>
+                    <li><i>📞</i> +260 979 614 864</li>
+                    <li><i>✉️</i> info@solidinkprinting.com</li>
+                    <li><i>🏠</i> 123 Business Park, Lusaka</li>
+                    <li><i>⚠️</i> 24/7 Computer Repairs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2023 Solid Ink Printing Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Pricing Tab Switching
+        function showPricing(category) {
+            document.querySelectorAll('.pricing-grid').forEach(grid => {
+                grid.style.display = 'none';
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            document.getElementById(`${category}-pricing`).style.display = 'grid';
+            event.target.classList.add('active');
+        }
+
+        // Simple Testimonial Slider
+        let currentTestimonial = 0;
+        const testimonials = [
+            {
+                img: "https://randomuser.me/api/portraits/men/32.jpg",
+                quote: "Solid Ink Printing delivered our event banners with perfect quality and on time. Their attention to detail is impressive!",
+                name: "John Mwansa",
+                title: "Event Planner, Lusaka"
+            },
+            {
+                img: "https://randomuser.me/api/portraits/women/44.jpg",
+                quote: "Their computer repair team saved my business when our server crashed. Fast response and professional service!",
+                name: "Sarah Banda",
+                title: "Business Owner"
+            },
+            {
+                img: "https://randomuser.me/api/portraits/women/65.jpg",
+                quote: "The chitenge prints we ordered were absolutely beautiful. Great quality and the colors were vibrant.",
+                name: "Grace Tembo",
+                title: "Wedding Planner"
+            }
+        ];
+
+        function showTestimonial(index) {
+            const testimonialElement = document.querySelector('.testimonial');
+            testimonialElement.innerHTML = `
+                <img src="${testimonials[index].img}" alt="Client">
+                <p>"${testimonials[index].quote}"</p>
+                <h4>${testimonials[index].name}</h4>
+                <p>${testimonials[index].title}</p>
+            `;
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+
+        // Initialize first testimonial
+        showTestimonial(currentTestimonial);
+        
+        // Auto-rotate testimonials every 5 seconds
+        setInterval(nextTestimonial, 5000);
+
+        // WhatsApp Form Submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form values
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const service = document.getElementById('service').value;
+                const message = document.getElementById('message').value.trim();
+                
+                // Validate required fields
+                if (!name || !phone || !service || !message) {
+                    alert('Please fill in all required fields (marked with *)');
+                    return;
+                }
+                
+                // Format phone number (remove spaces and special characters)
+                const formattedPhone = phone.replace(/\D/g, '');
+                
+                // Create WhatsApp message
+                let whatsappMessage = `*NEW CONTACT REQUEST*%0A%0A`;
+                whatsappMessage += `*Name:* ${name}%0A`;
+                whatsappMessage += `*Phone:* ${phone}%0A`;
+                if (email) whatsappMessage += `*Email:* ${email}%0A`;
+                whatsappMessage += `*Service Needed:* ${service}%0A`;
+                whatsappMessage += `*Message:*%0A${message}%0A%0A`;
+                whatsappMessage += `_Sent via Solid Ink Printing Website_`;
+                
+                // Create WhatsApp link
+                const whatsappNumber = '260979716489'; // Zambia number format (remove leading 0)
+                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+                
+                // Open WhatsApp in a new tab
+                window.open(whatsappUrl, '_blank');
+                
+                // Show confirmation and reset form
+                alert('Thank you! You will now be directed to WhatsApp to complete your request.');
+                contactForm.reset();
+                
+                // Optional: Track the submission (you could use Google Analytics here)
+                console.log('Form submitted:', { name, phone, service });
+            });
+        }
+
+        // Add active class to current section in navigation
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav ul li a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 300)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
